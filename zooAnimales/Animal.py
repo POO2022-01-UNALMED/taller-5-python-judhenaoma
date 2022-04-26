@@ -1,8 +1,4 @@
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.ave import Ave
-from zooAnimales.reptil import Reptil
-from zooAnimales.pez import Pez
-from zooAnimales.anfibio import Anfibio
+
 
 class Animal:
     _totalAnimales = 0
@@ -20,6 +16,12 @@ class Animal:
 
     @classmethod
     def totalPorTipo(cls):
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.ave import Ave
+        from zooAnimales.reptil import Reptil
+        from zooAnimales.pez import Pez
+        from zooAnimales.anfibio import Anfibio
+        
         return f"Mamiferos : {len(Mamifero._listado)}\nAves : {len(Ave._listado)}\nReptiles : {len(Reptil._listado)}\nPeces : {len(Pez._listado)}\nAnfibios : {len(Anfibio._listado)}"
 
 
