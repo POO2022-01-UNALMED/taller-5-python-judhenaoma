@@ -1,4 +1,4 @@
-from zooAnimales.Animal import Animal
+from zooAnimales.animal import Animal
 
 class Ave(Animal):
     _listado = []
@@ -26,7 +26,7 @@ class Ave(Animal):
     @classmethod
     def cantidadAves(cls):
         return len(cls._listado)
-        
+
 
     def setColorPlumas(self, colorPlumas):
         self._colorPlumas = colorPlumas
